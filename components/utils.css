@@ -1,0 +1,72 @@
+/*  CHAMELEON RESPONSIVE SETUP */
+
+/* xs */
+/* @media (min-width: 475px) { 
+ 
+  } */
+
+/* sm */
+/* @media (min-width: 640px) {
+      
+  }  */
+
+/* md */
+/* @media (min-width: 768px) {
+      
+  }  */
+
+/* lg */
+/* @media (min-width: 1024px) {
+      
+  }  */
+
+/* xl */
+/* @media (min-width: 1280px) {
+      
+  }  */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+    
+  }   */
+
+.btn {
+  color: var(--clr-neutral100);
+  line-height: 1;
+  padding: 1rem 2rem;
+  background: var(--clr-neutral400);
+  border-radius: 32px;
+}
+
+@media (min-width: 640px) {
+  .btn {
+    min-height: 3.5rem;
+    font-size: var(--size-lg);
+  }
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(120, 87, 255, 1) 0%,
+    rgba(49, 6, 242, 1) 100%
+  );
+}
+
+.grid-flow {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grid-flow[data-spacing="large"] {
+  gap: 2rem;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
